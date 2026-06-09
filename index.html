@@ -522,11 +522,12 @@
       right: -100%;
       width: 85%;
       max-width: 380px;
-      height: 100vh;
+      overflow-y: auto;
+      height: 100dvh;
       background-color: var(--color-dark-card);
       border-left: 1px solid var(--color-dark-border);
       z-index: 1005;
-      padding: 120px 40px 60px;
+      padding: 84px 40px 60px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -568,7 +569,7 @@
     .mobile-nav-links {
       display: flex;
       flex-direction: column;
-      gap: 2rem;
+      gap: 1rem;
     }
 
     .mobile-nav-item {
@@ -630,8 +631,7 @@
        -------------------------------------------------- */
     .hero {
       position: relative;
-      height: 100vh;
-      min-height: 750px;
+      min-height: 100dvh;
       display: flex;
       align-items: center;
       overflow: hidden;
@@ -2014,10 +2014,6 @@
         display: flex;
       }
 
-      .hero {
-        min-height: 650px;
-      }
-
       .hero h1 {
         font-size: 2.8rem;
       }
@@ -2098,6 +2094,10 @@
     }
 
     @media (max-width: 575px) {
+      .gallery-cta-block {
+        padding: 1.5rem;
+      }
+
       .footer-top {
         grid-template-columns: 1fr;
       }
