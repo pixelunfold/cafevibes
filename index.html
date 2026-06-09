@@ -1,0 +1,3165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Meta Tags -->
+  <title>Cafe Vibes – Unlimited Dosa & Modern Cafe in Kudasan, Gandhinagar</title>
+  <meta name="description"
+    content="Experience Gandhinagar's favorite Unlimited Dosa Festival starting at just ₹199! Cozy ambience, 4-5 varieties of crispy dosas, and perfect group vibes in Kudasan.">
+  <meta name="keywords"
+    content="Cafe Vibes, Unlimited Dosa Gandhinagar, Kudasan Cafe, South Indian Gandhinagar, Best Dosa Kudasan, Infocity Gandhinagar Dosa">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☕</text></svg>">
+
+  <!-- Google Fonts: Sora (modern geometric), Plus Jakarta Sans (body copy), Fraunces (serif accents) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,700;1,9..144,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Sora:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- FontAwesome Icons for modern, sharp UI indicators -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    /* --------------------------------------------------
+       DESIGN SYSTEM & VARIABLES
+       -------------------------------------------------- */
+    :root {
+      /* Colors */
+      --color-dark-bg: #120e0c;
+      /* Deep rich espresso charcoal */
+      --color-dark-card: #1c1613;
+      /* Secondary dark container */
+      --color-dark-border: #2c221d;
+      /* Subtle divider for dark sections */
+
+      --color-light-bg: #f9f6f0;
+      /* Soft warm ivory cream */
+      --color-light-card: #ffffff;
+      /* Pure white for light elements */
+      --color-light-border: #e9e3d8;
+      /* Subtle divider for light sections */
+
+      --color-accent-terracotta: #d95d39;
+      /* Brand core action color */
+      --color-accent-terracotta-hover: #c24d2c;
+      --color-accent-green: #5a7361;
+      /* Organic aesthetic tone */
+      --color-accent-green-light: #eef2ef;
+      --color-accent-gold: #e3a857;
+      /* Review stars & highlights */
+
+      --color-text-light: #f5f2eb;
+      --color-text-muted-light: #a89e95;
+      --color-text-dark: #1f1a17;
+      --color-text-muted-dark: #6e635a;
+
+      /* Typography */
+      --font-heading: 'Sora', sans-serif;
+      --font-body: 'Plus Jakarta Sans', sans-serif;
+      --font-accent: 'Fraunces', serif;
+
+      /* Transitions */
+      --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      --transition-fast: all 0.25s ease;
+
+      /* Border Radii */
+      --radius-lg: 24px;
+      --radius-md: 16px;
+      --radius-sm: 8px;
+      --radius-full: 9999px;
+
+      /* Shadows */
+      --shadow-sm: 0 4px 20px rgba(0, 0, 0, 0.04);
+      --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.08);
+      --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.15);
+      --shadow-terracotta: 0 10px 25px rgba(217, 93, 57, 0.3);
+
+      /* Glassmorphism Variables */
+      --glass-bg: rgba(28, 22, 19, 0.45);
+      --glass-border: rgba(255, 255, 255, 0.06);
+      --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+      --glass-blur: 20px;
+    }
+
+    /* --------------------------------------------------
+       BASE STYLE & RESET
+       -------------------------------------------------- */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background-color: var(--color-dark-bg);
+      color: var(--color-text-light);
+      line-height: 1.6;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: var(--transition-fast);
+    }
+
+    button,
+    input,
+    textarea,
+    select {
+      font-family: inherit;
+      outline: none;
+      border: none;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    /* --------------------------------------------------
+       COMMON COMPONENTS
+       -------------------------------------------------- */
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 1rem 2.2rem;
+      border-radius: var(--radius-full);
+      font-family: var(--font-heading);
+      font-weight: 600;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: var(--transition-smooth);
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    /* Button sheen micro-animation */
+    .btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+      transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+      z-index: -1;
+    }
+
+    .btn:hover::before {
+      left: 100%;
+    }
+
+    .btn-primary {
+      background-color: var(--color-accent-terracotta);
+      color: #ffffff;
+      box-shadow: var(--shadow-terracotta);
+    }
+
+    .btn-primary:hover {
+      background-color: var(--color-accent-terracotta-hover);
+      transform: translateY(-3px);
+      box-shadow: 0 12px 30px rgba(217, 93, 57, 0.45);
+    }
+
+    .btn-secondary {
+      background-color: transparent;
+      color: var(--color-text-light);
+      border: 1px solid rgba(245, 242, 235, 0.3);
+    }
+
+    .btn-secondary:hover {
+      background-color: rgba(245, 242, 235, 0.08);
+      border-color: var(--color-text-light);
+      transform: translateY(-3px);
+    }
+
+    .btn-dark {
+      background-color: var(--color-dark-bg);
+      color: var(--color-text-light);
+    }
+
+    .btn-dark:hover {
+      background-color: #000;
+      transform: translateY(-2px);
+    }
+
+    .btn-green {
+      background-color: var(--color-accent-green);
+      color: #ffffff;
+    }
+
+    .btn-green:hover {
+      background-color: #495e4f;
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(90, 115, 97, 0.3);
+    }
+
+    .badge-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background-color: rgba(217, 93, 57, 0.12);
+      color: var(--color-accent-terracotta);
+      font-size: 1.25rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .section-tag {
+      font-family: var(--font-heading);
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      color: var(--color-accent-terracotta);
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+
+    .section-title {
+      font-family: var(--font-heading);
+      font-size: 2.5rem;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+    }
+
+    .section-title span {
+      font-family: var(--font-accent);
+      font-style: italic;
+      font-weight: 400;
+      color: var(--color-accent-terracotta);
+    }
+
+    .section-desc {
+      font-size: 1.1rem;
+      color: var(--color-text-muted-light);
+      max-width: 600px;
+      margin-bottom: 3.5rem;
+    }
+
+    /* Light Theme Section Overrides */
+    .light-section {
+      background-color: var(--color-light-bg);
+      color: var(--color-text-dark);
+    }
+
+    .light-section .section-desc {
+      color: var(--color-text-muted-dark);
+    }
+
+    /* Scroll animations */
+    .reveal {
+      opacity: 0;
+      transform: translateY(40px) scale(0.98);
+      transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+
+    .delay-1 {
+      transition-delay: 0.15s;
+    }
+
+    .delay-2 {
+      transition-delay: 0.3s;
+    }
+
+    .delay-3 {
+      transition-delay: 0.45s;
+    }
+
+    /* Custom styled scrollbar */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: var(--color-dark-bg);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #332722;
+      border-radius: var(--radius-full);
+      border: 2px solid var(--color-dark-bg);
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--color-accent-terracotta);
+    }
+
+    /* --------------------------------------------------
+       HEADER & NAVIGATION
+       -------------------------------------------------- */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 90px;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      transition: var(--transition-smooth);
+      border-bottom: 1px solid rgba(245, 242, 235, 0.05);
+    }
+
+    header.scrolled {
+      height: 75px;
+      background-color: rgba(20, 16, 14, 0.85);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      border-bottom-color: rgba(245, 242, 235, 0.08);
+    }
+
+    .header-container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: var(--font-heading);
+      font-weight: 800;
+      font-size: 1.45rem;
+      letter-spacing: -0.02em;
+      color: var(--color-text-light);
+    }
+
+    .logo-ring {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      border: 3px solid var(--color-accent-terracotta);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 0.82rem;
+      letter-spacing: -0.5px;
+      color: var(--color-accent-terracotta);
+      position: relative;
+    }
+
+    .logo-ring::after {
+      content: '';
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: var(--color-accent-green);
+      top: -2px;
+      right: -2px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2.2rem;
+    }
+
+    .nav-item {
+      font-family: var(--font-heading);
+      font-weight: 500;
+      font-size: 0.9rem;
+      color: var(--color-text-muted-light);
+      position: relative;
+      padding: 0.5rem 0;
+    }
+
+    .nav-item::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: var(--color-accent-terracotta);
+      transition: var(--transition-smooth);
+    }
+
+    .nav-item:hover,
+    .nav-item.active {
+      color: var(--color-text-light);
+    }
+
+    .nav-item:hover::after,
+    .nav-item.active::after {
+      width: 100%;
+    }
+
+    .nav-cta {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    /* Redesigned phone icon */
+    .header-phone-btn {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background-color: rgba(245, 242, 235, 0.04);
+      border: 1px solid rgba(245, 242, 235, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-accent-terracotta);
+      font-size: 1.1rem;
+      transition: var(--transition-smooth);
+    }
+
+    .header-phone-btn:hover {
+      background-color: var(--color-accent-terracotta);
+      color: #ffffff;
+      border-color: var(--color-accent-terracotta);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-terracotta);
+    }
+
+    /* Modern hamburger trigger button style */
+    .menu-trigger {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background-color: rgba(245, 242, 235, 0.04);
+      border: 1px solid rgba(245, 242, 235, 0.1);
+      cursor: pointer;
+      z-index: 1010;
+      position: relative;
+      transition: var(--transition-smooth);
+    }
+
+    .menu-trigger:hover {
+      background-color: rgba(245, 242, 235, 0.1);
+      border-color: rgba(245, 242, 235, 0.2);
+    }
+
+    .menu-trigger span {
+      display: block;
+      width: 20px;
+      height: 2px;
+      background-color: var(--color-text-light);
+      transition: var(--transition-smooth);
+      transform-origin: center;
+    }
+
+    .menu-trigger.open {
+      background-color: var(--color-accent-terracotta);
+      border-color: var(--color-accent-terracotta);
+    }
+
+    .menu-trigger.open span {
+      background-color: #ffffff;
+    }
+
+    .menu-trigger.open span:nth-child(1) {
+      transform: translateY(7px) rotate(45deg);
+    }
+
+    .menu-trigger.open span:nth-child(2) {
+      opacity: 0;
+      transform: scaleX(0);
+    }
+
+    .menu-trigger.open span:nth-child(3) {
+      transform: translateY(-7px) rotate(-45deg);
+    }
+
+    /* Mobile drawer navigation block */
+    .mobile-nav {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 85%;
+      max-width: 380px;
+      height: 100vh;
+      background-color: var(--color-dark-card);
+      border-left: 1px solid var(--color-dark-border);
+      z-index: 1005;
+      padding: 120px 40px 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: -10px 0 40px rgba(0, 0, 0, 0.5);
+      transition: right 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .mobile-nav.open {
+      right: 0;
+    }
+
+    /* Visible drawer close button icon */
+    .mobile-nav-close {
+      position: absolute;
+      top: 25px;
+      right: 25px;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background-color: rgba(245, 242, 235, 0.04);
+      border: 1px solid rgba(245, 242, 235, 0.1);
+      color: var(--color-text-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      cursor: pointer;
+      transition: var(--transition-smooth);
+      z-index: 1006;
+    }
+
+    .mobile-nav-close:hover {
+      background-color: var(--color-accent-terracotta);
+      border-color: var(--color-accent-terracotta);
+      color: #ffffff;
+      transform: rotate(90deg);
+    }
+
+    .mobile-nav-links {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .mobile-nav-item {
+      font-family: var(--font-heading);
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--color-text-muted-light);
+    }
+
+    .mobile-nav-item:hover,
+    .mobile-nav-item.active {
+      color: var(--color-text-light);
+      padding-left: 10px;
+    }
+
+    .mobile-nav-footer {
+      border-top: 1px solid rgba(245, 242, 235, 0.08);
+      padding-top: 2rem;
+    }
+
+    .mobile-nav-socials {
+      display: flex;
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .mobile-nav-socials a {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: rgba(245, 242, 235, 0.05);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+    }
+
+    .mobile-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(4px);
+      z-index: 1004;
+      opacity: 0;
+      visibility: hidden;
+      transition: var(--transition-smooth);
+    }
+
+    .mobile-overlay.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    /* --------------------------------------------------
+       HERO SECTION
+       -------------------------------------------------- */
+    .hero {
+      position: relative;
+      height: 100vh;
+      min-height: 750px;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      background-color: var(--color-dark-bg);
+    }
+
+    .hero-bg-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+
+    .hero-bg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: scale(1.05);
+      animation: slowZoom 20s infinite alternate;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom, rgba(18, 14, 12, 0.6) 0%, rgba(18, 14, 12, 0.92) 100%);
+      z-index: 2;
+    }
+
+    @keyframes slowZoom {
+      0% {
+        transform: scale(1.05);
+      }
+
+      100% {
+        transform: scale(1.15);
+      }
+    }
+
+    .hero .container {
+      z-index: 3;
+      padding-top: 90px;
+    }
+
+    .hero-content {
+      max-width: 780px;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 0.5rem 1.2rem;
+      background-color: rgba(217, 93, 57, 0.12);
+      border: 1px solid rgba(217, 93, 57, 0.25);
+      border-radius: var(--radius-full);
+      color: var(--color-accent-terracotta);
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+    }
+
+    .hero-badge i {
+      font-size: 0.75rem;
+    }
+
+    .hero h1 {
+      font-family: var(--font-heading);
+      font-size: 4rem;
+      font-weight: 800;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      margin-bottom: 1.5rem;
+      text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .hero h1 span {
+      font-family: var(--font-accent);
+      font-weight: 400;
+      font-style: italic;
+      color: var(--color-accent-terracotta);
+    }
+
+    .hero-sub {
+      font-size: 1.25rem;
+      color: var(--color-text-muted-light);
+      margin-bottom: 3rem;
+      max-width: 650px;
+      line-height: 1.6;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 1.5rem;
+      margin-bottom: 4.5rem;
+      flex-wrap: wrap;
+    }
+
+    /* Info Strip with Liquid Glass styling */
+    .info-strip {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+      border-top: 1px solid rgba(245, 242, 235, 0.1);
+      padding-top: 2.5rem;
+    }
+
+    .info-item {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      background: var(--glass-bg);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid var(--glass-border);
+      border-radius: var(--radius-md);
+      padding: 1.25rem 1.5rem;
+      transition: var(--transition-smooth);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .info-item:hover {
+      transform: translateY(-5px);
+      background: rgba(28, 22, 19, 0.65);
+      border-color: rgba(217, 93, 57, 0.3);
+      box-shadow: 0 10px 30px rgba(217, 93, 57, 0.1);
+    }
+
+    .info-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background-color: rgba(245, 242, 235, 0.04);
+      border: 1px solid rgba(245, 242, 235, 0.08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-accent-terracotta);
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+
+    .info-details h4 {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 0.95rem;
+      margin-bottom: 2px;
+    }
+
+    .info-details p {
+      font-size: 0.8rem;
+      color: var(--color-text-muted-light);
+    }
+
+    /* --------------------------------------------------
+       WHY CAFE VIBES (BENEFITS)
+       -------------------------------------------------- */
+    .why-us {
+      padding: 8rem 0;
+      background-color: var(--color-dark-bg);
+      position: relative;
+    }
+
+    .why-us::before {
+      content: '';
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(217, 93, 57, 0.05) 0%, transparent 70%);
+      top: 10%;
+      left: -50px;
+      pointer-events: none;
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+    }
+
+    .why-card {
+      background: var(--glass-bg);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid var(--glass-border);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem;
+      transition: var(--transition-smooth);
+      position: relative;
+      overflow: hidden;
+      box-shadow: var(--glass-shadow);
+    }
+
+    .why-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(to right, var(--color-accent-terracotta), var(--color-accent-green));
+      transform: scaleX(0);
+      transform-origin: left center;
+      transition: var(--transition-smooth);
+    }
+
+    .why-card:hover {
+      transform: translateY(-8px);
+      background: rgba(28, 22, 19, 0.65);
+      border-color: rgba(217, 93, 57, 0.3);
+      box-shadow: 0 12px 40px rgba(217, 93, 57, 0.2);
+    }
+
+    .why-card:hover::before {
+      transform: scaleX(1);
+    }
+
+    .why-card h3 {
+      font-family: var(--font-heading);
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: var(--color-text-light);
+    }
+
+    .why-card p {
+      font-size: 0.9rem;
+      color: var(--color-text-muted-light);
+      line-height: 1.6;
+    }
+
+    /* --------------------------------------------------
+       SIGNATURE MENU SECTION
+       -------------------------------------------------- */
+    .menu-section {
+      padding: 8rem 0;
+      background-color: var(--color-light-bg);
+      color: var(--color-text-dark);
+      position: relative;
+    }
+
+    .menu-layout {
+      display: grid;
+      grid-template-columns: 4.5fr 7.5fr;
+      gap: 4rem;
+      align-items: start;
+    }
+
+    /* Left Copy Column */
+    .menu-info {
+      position: sticky;
+      top: 130px;
+    }
+
+    .unlimited-badge {
+      display: inline-block;
+      padding: 0.6rem 1.4rem;
+      background-color: var(--color-accent-green);
+      color: #ffffff;
+      border-radius: var(--radius-full);
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 0.9rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 4px 15px rgba(90, 115, 97, 0.2);
+    }
+
+    .rules-list {
+      margin: 2rem 0 3rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+
+    .rule-item {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+
+    .rule-item i {
+      color: var(--color-accent-green);
+      font-size: 1.1rem;
+      margin-top: 3px;
+    }
+
+    .rule-text h4 {
+      font-family: var(--font-heading);
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 2px;
+    }
+
+    .rule-text p {
+      font-size: 0.9rem;
+      color: var(--color-text-muted-dark);
+    }
+
+    .disclaimer-badge {
+      background-color: var(--color-light-card);
+      border: 1px dashed var(--color-light-border);
+      border-radius: var(--radius-md);
+      padding: 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      max-width: 420px;
+    }
+
+    .disclaimer-badge i {
+      color: var(--color-accent-terracotta);
+      font-size: 1.25rem;
+    }
+
+    .disclaimer-badge p {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--color-text-muted-dark);
+      line-height: 1.4;
+    }
+
+    /* Right Menu Column with scroll-hide and premium pills */
+    .menu-tabs {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      margin-bottom: 2.5rem;
+      border-bottom: 1px solid var(--color-light-border);
+      padding-bottom: 1.25rem;
+      overflow-x: auto;
+      white-space: nowrap;
+      -ms-overflow-style: none;
+      /* IE and Edge */
+      scrollbar-width: none;
+      /* Firefox */
+
+    }
+
+    .menu-tabs::-webkit-scrollbar {
+      display: none;
+      /* Chrome, Safari, Opera */
+    }
+
+    .tab-btn {
+      background: rgba(255, 255, 255, 0.5);
+      border: 1px solid var(--color-light-border);
+      padding: 0.8rem 1.6rem;
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 0.85rem;
+      border-radius: var(--radius-full);
+      color: var(--color-text-muted-dark);
+      cursor: pointer;
+      transition: var(--transition-smooth);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+    }
+
+    .tab-btn:hover {
+      background-color: rgba(255, 255, 255, 0.9);
+      color: var(--color-text-dark);
+      transform: translateY(-2px);
+    }
+
+    .tab-btn.active {
+      background-color: var(--color-text-dark);
+      color: var(--color-light-bg);
+      border-color: var(--color-text-dark);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .menu-grid {
+      display: none;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+
+    .menu-grid.active {
+      display: grid;
+    }
+
+    /* Staggered card fade-in and slide-up micro-animations */
+    .menu-grid.active .menu-item-card {
+      animation: cardFadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+    }
+
+    .menu-grid.active .menu-item-card:nth-child(1) {
+      animation-delay: 0.05s;
+    }
+
+    .menu-grid.active .menu-item-card:nth-child(2) {
+      animation-delay: 0.1s;
+    }
+
+    .menu-grid.active .menu-item-card:nth-child(3) {
+      animation-delay: 0.15s;
+    }
+
+    .menu-grid.active .menu-item-card:nth-child(4) {
+      animation-delay: 0.2s;
+    }
+
+    .menu-grid.active .menu-item-card:nth-child(5) {
+      animation-delay: 0.25s;
+    }
+
+    .menu-grid.active .menu-item-card:nth-child(6) {
+      animation-delay: 0.3s;
+    }
+
+    @keyframes cardFadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .menu-item-card {
+      background-color: var(--color-light-card);
+      border: 1px solid var(--color-light-border);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+      transition: var(--transition-smooth);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .menu-item-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+      border-color: rgba(217, 93, 57, 0.15);
+    }
+
+    .menu-item-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 0.75rem;
+      gap: 10px;
+    }
+
+    .menu-item-title {
+      font-family: var(--font-heading);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--color-text-dark);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* Vegetarian green dot indicator */
+    .veg-dot {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 14px;
+      height: 14px;
+      border: 1px solid #1fa756;
+      padding: 2px;
+      background: transparent;
+      flex-shrink: 0;
+    }
+
+    .veg-dot::after {
+      content: '';
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: #1fa756;
+      display: block;
+    }
+
+    .menu-item-price {
+      font-family: var(--font-heading);
+      font-weight: 800;
+      color: var(--color-accent-terracotta);
+      font-size: 1.1rem;
+    }
+
+    .menu-item-desc {
+      font-size: 0.85rem;
+      color: var(--color-text-muted-dark);
+      line-height: 1.5;
+    }
+
+    /* --------------------------------------------------
+       GALLERY SECTION
+       -------------------------------------------------- */
+    .gallery {
+      padding: 8rem 0;
+      background-color: var(--color-dark-bg);
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+      margin-bottom: 3.5rem;
+    }
+
+    .gallery-item {
+      position: relative;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      aspect-ratio: 1 / 1;
+      box-shadow: var(--shadow-sm);
+      cursor: pointer;
+      border: 1px solid var(--color-dark-border);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .gallery-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(18, 14, 12, 0.8);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      opacity: 0;
+      transition: var(--transition-smooth);
+      z-index: 2;
+    }
+
+    .gallery-overlay i {
+      color: var(--color-accent-terracotta);
+      font-size: 1.8rem;
+      transform: translateY(15px);
+      transition: var(--transition-smooth);
+    }
+
+    .gallery-overlay span {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 0.9rem;
+      letter-spacing: 0.05em;
+      transform: translateY(15px);
+      transition: var(--transition-smooth) 0.05s;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.1);
+    }
+
+    .gallery-item:hover .gallery-overlay {
+      opacity: 1;
+    }
+
+    .gallery-item:hover .gallery-overlay i,
+    .gallery-item:hover .gallery-overlay span {
+      transform: translateY(0);
+    }
+
+    .gallery-cta-block {
+      background-color: var(--color-dark-card);
+      border: 1px solid var(--color-dark-border);
+      border-radius: var(--radius-lg);
+      padding: 3rem;
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .gallery-cta-block h3 {
+      font-family: var(--font-heading);
+      font-size: 1.75rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .gallery-cta-block p {
+      color: var(--color-text-muted-light);
+      margin-bottom: 2rem;
+      font-size: 1rem;
+    }
+
+    /* --------------------------------------------------
+       REVIEWS SECTION
+       -------------------------------------------------- */
+    .reviews {
+      padding: 8rem 0;
+      background-color: var(--color-light-bg);
+      color: var(--color-text-dark);
+      position: relative;
+    }
+
+    .reviews-layout {
+      display: grid;
+      grid-template-columns: 4fr 8fr;
+      gap: 4rem;
+      align-items: start;
+    }
+
+    /* Left Stats Block */
+    .rating-summary-card {
+      background-color: var(--color-light-card);
+      border: 1px solid var(--color-light-border);
+      border-radius: var(--radius-lg);
+      padding: 3rem 2.5rem;
+      text-align: center;
+      box-shadow: var(--shadow-md);
+    }
+
+    .rating-number {
+      font-family: var(--font-heading);
+      font-size: 4.5rem;
+      font-weight: 800;
+      line-height: 1;
+      color: var(--color-text-dark);
+      margin-bottom: 0.5rem;
+    }
+
+    .rating-stars {
+      color: var(--color-accent-gold);
+      font-size: 1.35rem;
+      margin-bottom: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 4px;
+    }
+
+    .rating-count {
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--color-text-muted-dark);
+      margin-bottom: 1.5rem;
+    }
+
+    .rating-source {
+      border-top: 1px solid var(--color-light-border);
+      padding-top: 1.5rem;
+      font-size: 0.85rem;
+      color: var(--color-text-muted-dark);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .rating-source i {
+      color: #4285f4;
+      /* Google color */
+      font-size: 1.1rem;
+    }
+
+    /* Right Carousel Block */
+    .reviews-carousel-container {
+      position: relative;
+      overflow: hidden;
+      padding-bottom: 2.5rem;
+      margin: 0 -2rem;
+    }
+
+    .reviews-track {
+      display: flex;
+      transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .review-slide {
+      min-width: 100%;
+      padding: 0 2rem;
+      opacity: 0.3;
+      transform: scale(0.95);
+      transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .review-slide.active-slide {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    .review-card {
+      background-color: var(--color-light-card);
+      border: 1px solid var(--color-light-border);
+      border-radius: var(--radius-lg);
+      padding: 3rem;
+      box-shadow: var(--shadow-md);
+      position: relative;
+      transition: var(--transition-smooth);
+    }
+
+    .review-card:hover {
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-5px);
+      border-color: rgba(217, 93, 57, 0.15);
+    }
+
+    .review-card::before {
+      content: '“';
+      position: absolute;
+      top: 20px;
+      left: 30px;
+      font-family: var(--font-accent);
+      font-size: 8rem;
+      color: rgba(217, 93, 57, 0.08);
+      line-height: 1;
+    }
+
+    .review-stars {
+      color: var(--color-accent-gold);
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+      display: flex;
+      gap: 3px;
+    }
+
+    .review-content {
+      font-family: var(--font-body);
+      font-size: 1.15rem;
+      font-weight: 400;
+      line-height: 1.7;
+      color: var(--color-text-dark);
+      margin-bottom: 2rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    .review-author {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .author-avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background-color: var(--color-accent-green-light);
+      color: var(--color-accent-green);
+      font-family: var(--font-heading);
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+    }
+
+    .author-info h4 {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 1rem;
+      margin-bottom: 2px;
+    }
+
+    .author-info p {
+      font-size: 0.8rem;
+      color: var(--color-text-muted-dark);
+    }
+
+    /* Carousel Navigation Controls */
+    .carousel-controls {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 2rem;
+      position: relative;
+      z-index: 5;
+      padding: 0 2rem;
+    }
+
+    .carousel-dots {
+      display: flex;
+      gap: 8px;
+    }
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: var(--color-light-border);
+      cursor: pointer;
+      transition: var(--transition-fast);
+    }
+
+    .dot.active {
+      background-color: var(--color-accent-terracotta);
+      width: 24px;
+      border-radius: 4px;
+    }
+
+    .carousel-arrows {
+      display: flex;
+      gap: 10px;
+    }
+
+    .arrow-btn {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background-color: var(--color-light-card);
+      border: 1px solid var(--color-light-border);
+      color: var(--color-text-dark);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: var(--transition-smooth);
+      font-size: 1rem;
+    }
+
+    .arrow-btn:hover {
+      background-color: var(--color-text-dark);
+      color: var(--color-light-bg);
+      border-color: var(--color-text-dark);
+    }
+
+    /* --------------------------------------------------
+       LOCATION & HOURS SECTION
+       -------------------------------------------------- */
+    .location-hours {
+      padding: 8rem 0;
+      background-color: var(--color-dark-bg);
+      border-bottom: 1px solid var(--color-dark-border);
+    }
+
+    .location-layout {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 4rem;
+      align-items: stretch;
+    }
+
+    .location-details-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .contact-card-list {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    .contact-card-item {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+    }
+
+    .contact-card-icon {
+      width: 54px;
+      height: 54px;
+      border-radius: var(--radius-md);
+      background-color: var(--color-dark-card);
+      border: 1px solid var(--color-dark-border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-accent-terracotta);
+      font-size: 1.3rem;
+      flex-shrink: 0;
+    }
+
+    .contact-card-info h4 {
+      font-family: var(--font-heading);
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .contact-card-info p {
+      font-size: 0.95rem;
+      color: var(--color-text-muted-light);
+      line-height: 1.5;
+    }
+
+    .contact-card-info a {
+      color: var(--color-accent-terracotta);
+      font-weight: 600;
+    }
+
+    .contact-card-info a:hover {
+      text-decoration: underline;
+    }
+
+    /* Map Box */
+    .map-container {
+      position: relative;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 1px solid var(--color-dark-border);
+      box-shadow: var(--shadow-lg);
+      height: 100%;
+      min-height: 400px;
+    }
+
+    .map-container iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      display: block;
+      /* Custom map styling to blend with the charcoal dark theme */
+      filter: grayscale(1) invert(0.92) contrast(1.1) brightness(0.9);
+    }
+
+    /* --------------------------------------------------
+       RESERVATION SECTION
+       -------------------------------------------------- */
+    .booking-section {
+      padding: 8rem 0;
+      background-color: var(--color-dark-card);
+      position: relative;
+    }
+
+    .booking-layout {
+      display: grid;
+      grid-template-columns: 5fr 6fr;
+      gap: 4rem;
+      align-items: start;
+    }
+
+    .booking-copy {
+      max-width: 480px;
+    }
+
+    .quick-connect-buttons {
+      margin-top: 3rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .quick-btn {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      padding: 1.25rem 2rem;
+      border-radius: var(--radius-md);
+      background-color: var(--color-dark-bg);
+      border: 1px solid var(--color-dark-border);
+      transition: var(--transition-smooth);
+    }
+
+    .quick-btn:hover {
+      border-color: rgba(217, 93, 57, 0.3);
+      transform: translateX(5px);
+      background-color: #000;
+    }
+
+    .quick-btn-icon {
+      font-size: 1.6rem;
+    }
+
+    .quick-btn-icon.whatsapp {
+      color: #25d366;
+    }
+
+    .quick-btn-icon.phone {
+      color: var(--color-accent-terracotta);
+    }
+
+    .quick-btn-text h4 {
+      font-family: var(--font-heading);
+      font-size: 0.95rem;
+      font-weight: 700;
+      margin-bottom: 2px;
+    }
+
+    .quick-btn-text p {
+      font-size: 0.8rem;
+      color: var(--color-text-muted-light);
+    }
+
+    /* Reservation Form with Liquid Glass styling */
+    .booking-form-box {
+      background: rgba(28, 22, 19, 0.55);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: var(--radius-lg);
+      padding: 3.5rem;
+      box-shadow: var(--shadow-lg);
+      transition: var(--transition-smooth);
+    }
+
+    .booking-form-box h3 {
+      font-family: var(--font-heading);
+      font-size: 1.75rem;
+      font-weight: 700;
+      margin-bottom: 2rem;
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+      position: relative;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+
+    .form-label {
+      display: block;
+      font-family: var(--font-heading);
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+      color: var(--color-text-muted-light);
+    }
+
+    .form-input {
+      width: 100%;
+      background-color: var(--color-dark-card);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: var(--radius-md);
+      padding: 1rem 1.25rem;
+      color: var(--color-text-light);
+      font-family: var(--font-body);
+      font-size: 0.95rem;
+      transition: var(--transition-smooth);
+      box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .form-input:focus {
+      border-color: var(--color-accent-terracotta);
+      background-color: #1a1411;
+      box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2), 0 0 0 4px rgba(217, 93, 57, 0.15);
+    }
+
+    .form-input::placeholder {
+      color: #574e47;
+    }
+
+    /* Premium styled custom dropdown */
+    select.form-input {
+      appearance: none;
+      -webkit-appearance: none;
+      background-image: url("data:image/svg+xml;utf8,<svg fill='%23d95d39' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+      background-repeat: no-repeat;
+      background-position: right 16px center;
+      background-size: 18px;
+      padding-right: 40px;
+      cursor: pointer;
+    }
+
+    textarea.form-input {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .submit-container {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .submit-container .btn {
+      width: 100%;
+    }
+
+    .submit-or {
+      text-align: center;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: rgba(245, 242, 235, 0.15);
+      letter-spacing: 0.15em;
+      position: relative;
+    }
+
+    .submit-or::before,
+    .submit-or::after {
+      content: '';
+      position: absolute;
+      width: 40%;
+      height: 1px;
+      background-color: rgba(245, 242, 235, 0.08);
+      top: 50%;
+    }
+
+    .submit-or::before {
+      left: 0;
+    }
+
+    .submit-or::after {
+      right: 0;
+    }
+
+    /* Booking Confirmation Dialog */
+    .success-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      z-index: 2000;
+      backdrop-filter: blur(8px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      visibility: hidden;
+      transition: var(--transition-smooth);
+    }
+
+    .success-overlay.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .success-card {
+      background-color: var(--color-dark-card);
+      border: 1px solid var(--color-dark-border);
+      border-radius: var(--radius-lg);
+      padding: 3.5rem;
+      text-align: center;
+      max-width: 500px;
+      width: 90%;
+      box-shadow: var(--shadow-lg);
+      transform: scale(0.9);
+      transition: var(--transition-smooth);
+    }
+
+    .success-overlay.visible .success-card {
+      transform: scale(1);
+    }
+
+    .success-icon {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background-color: rgba(90, 115, 97, 0.12);
+      border: 1px solid rgba(90, 115, 97, 0.25);
+      color: var(--color-accent-green);
+      font-size: 2.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 2rem;
+    }
+
+    .success-card h3 {
+      font-family: var(--font-heading);
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .success-card p {
+      color: var(--color-text-muted-light);
+      margin-bottom: 2.5rem;
+      font-size: 0.95rem;
+    }
+
+    /* --------------------------------------------------
+       FOOTER
+       -------------------------------------------------- */
+    footer {
+      background-color: var(--color-dark-bg);
+      padding: 6rem 0 3rem;
+      font-size: 0.9rem;
+      border-top: 1px solid var(--color-dark-border);
+    }
+
+    .footer-top {
+      display: grid;
+      grid-template-columns: 4fr 2fr 2fr 4fr;
+      gap: 4rem;
+      margin-bottom: 4rem;
+    }
+
+    .footer-brand h3 {
+      font-family: var(--font-heading);
+      font-size: 1.5rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+    }
+
+    .footer-brand p {
+      color: var(--color-text-muted-light);
+      line-height: 1.6;
+      margin-bottom: 2rem;
+      max-width: 300px;
+    }
+
+    .footer-links-title {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+      color: var(--color-text-light);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .footer-links-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .footer-links-list a {
+      color: var(--color-text-muted-light);
+    }
+
+    .footer-links-list a:hover {
+      color: var(--color-accent-terracotta);
+      padding-left: 5px;
+    }
+
+    .footer-insta-preview {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+    }
+
+    .footer-insta-img {
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+      aspect-ratio: 1 / 1;
+      border: 1px solid var(--color-dark-border);
+    }
+
+    .footer-insta-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid var(--color-dark-border);
+      padding-top: 2.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: var(--color-text-muted-light);
+      font-size: 0.85rem;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+
+    .footer-socials {
+      display: flex;
+      gap: 1.25rem;
+    }
+
+    .footer-social-link {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background-color: var(--color-dark-card);
+      border: 1px solid var(--color-dark-border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-text-muted-light);
+      font-size: 0.95rem;
+      transition: var(--transition-fast);
+    }
+
+    .footer-social-link:hover {
+      background-color: var(--color-accent-terracotta);
+      color: #ffffff;
+      border-color: var(--color-accent-terracotta);
+      transform: translateY(-2px);
+    }
+
+    /* --------------------------------------------------
+       RESPONSIVE MEDIA QUERIES (MOBILE FIRST)
+       -------------------------------------------------- */
+
+    /* XL Screens / Desktops */
+    @media (max-width: 1280px) {
+      .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .footer-top {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+      }
+    }
+
+    /* L Screens / Tablets Landscape */
+    @media (max-width: 1024px) {
+      .section-title {
+        font-size: 2.2rem;
+      }
+
+      .hero h1 {
+        font-size: 3.2rem;
+      }
+
+      .menu-layout {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+
+      .menu-info {
+        position: static;
+      }
+
+      .reviews-layout {
+        gap: 2rem;
+      }
+
+      .location-layout {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+
+      .map-container {
+        min-height: 350px;
+      }
+
+      .booking-layout {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+
+      .booking-form-box {
+        padding: 2.5rem;
+      }
+    }
+
+    /* M Screens / Tablets Portrait & Landscape (Header collapses at 1024px) */
+    @media (max-width: 1024px) {
+      header {
+        height: 80px;
+      }
+
+      header.scrolled {
+        height: 70px;
+      }
+
+      .nav-links,
+      .nav-cta {
+        display: none;
+      }
+
+      .menu-trigger {
+        display: flex;
+      }
+
+      .hero {
+        min-height: 650px;
+      }
+
+      .hero h1 {
+        font-size: 2.8rem;
+      }
+
+      .hero-sub {
+        font-size: 1.15rem;
+        margin-bottom: 2rem;
+      }
+
+      .hero-actions {
+        margin-bottom: 3.5rem;
+      }
+
+      .info-strip {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.25rem;
+        padding-top: 2rem;
+      }
+
+      .why-us {
+        padding: 5rem 0;
+      }
+
+      .menu-section {
+        padding: 5rem 0;
+      }
+
+      .gallery {
+        padding: 5rem 0;
+      }
+
+      .reviews {
+        padding: 5rem 0;
+      }
+
+      .location-hours {
+        padding: 5rem 0;
+      }
+
+      .booking-section {
+        padding: 5rem 0;
+      }
+
+      .booking-form-box {
+        padding: 2.5rem 2rem;
+      }
+
+      .review-card {
+        padding: 2rem;
+      }
+
+      .review-content {
+        font-size: 1rem;
+      }
+
+      .footer-top {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem;
+      }
+    }
+
+    /* Small Tablets & Large Phones (Below 768px) */
+    @media (max-width: 768px) {
+      .menu-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+      }
+
+      .reviews-layout {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+    }
+
+    @media (max-width: 575px) {
+      .footer-top {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* S Screens / Mobile Phones */
+    @media (max-width: 480px) {
+      .hero h1 {
+        font-size: 2.1rem;
+      }
+
+      .info-strip {
+        grid-template-columns: 1fr;
+      }
+
+      .why-grid {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+      }
+
+      .why-card {
+        padding: 2rem;
+      }
+
+      .success-card {
+        padding: 2.5rem 1.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- MOBILE NAVIGATION DRAWER OVERLAY -->
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+
+  <!-- STICKY HEADER -->
+  <header id="mainHeader">
+    <div class="header-container">
+      <a href="#home" class="logo" aria-label="Cafe Vibes Home">
+        <div class="logo-ring">CV</div>
+        <span>Cafe Vibes</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="#home" class="nav-item active">Home</a>
+        <a href="#why-vibes" class="nav-item">Why Us</a>
+        <a href="#menu" class="nav-item">Menu</a>
+        <a href="#reviews" class="nav-item">Reviews</a>
+        <a href="#location" class="nav-item">Location</a>
+        <a href="#reserve" class="nav-item">Contact</a>
+      </nav>
+
+      <div class="nav-cta">
+        <a href="tel:+919081814546" class="header-phone-btn" aria-label="Call Cafe Vibes">
+          <i class="fa-solid fa-phone"></i>
+        </a>
+        <a href="#reserve" class="btn btn-primary" style="padding: 0.6rem 1.5rem; font-size: 0.85rem;">Book Table</a>
+      </div>
+
+      <!-- Hamburger toggle button -->
+      <button class="menu-trigger" id="menuTrigger" aria-label="Toggle Mobile Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE SIDE DRAWER -->
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile Navigation">
+    <button class="mobile-nav-close" id="mobileNavClose" aria-label="Close Menu">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <div class="mobile-nav-links">
+      <a href="#home" class="mobile-nav-item">Home</a>
+      <a href="#why-vibes" class="mobile-nav-item">Why Us</a>
+      <a href="#menu" class="mobile-nav-item">Menu</a>
+      <a href="#gallery" class="mobile-nav-item">Gallery</a>
+      <a href="#reviews" class="mobile-nav-item">Reviews</a>
+      <a href="#location" class="mobile-nav-item">Location</a>
+      <a href="#reserve" class="mobile-nav-item">Contact</a>
+    </div>
+    <div class="mobile-nav-footer">
+      <a href="tel:+919081814546" class="header-phone-btn"
+        style="margin-bottom: 1rem; width: fit-content; border-radius: var(--radius-full); padding: 0 1.25rem; gap: 8px;">
+        <i class="fa-solid fa-phone"></i>
+        <span style="font-size: 0.9rem; font-weight: 600;">Call Us</span>
+      </a>
+      <p style="font-size: 0.8rem; color: var(--color-text-muted-light)">Shop 69, Kudasan, Gandhinagar</p>
+      <div class="mobile-nav-socials">
+        <a href="https://www.instagram.com/cafevibes_kudasan" target="_blank" rel="noopener" aria-label="Instagram"><i
+            class="fa-brands fa-instagram"></i></a>
+        <a href="https://wa.me/919081814546" target="_blank" rel="noopener" aria-label="WhatsApp"><i
+            class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://maps.app.goo.gl/RWY4NNbutx9XGQaa8" target="_blank" rel="noopener" aria-label="Google Maps"><i
+            class="fa-solid fa-map-location-dot"></i></a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MAIN SECTIONS -->
+  <main>
+
+    <!-- SECTION 1: HERO SECTION -->
+    <section class="hero" id="home">
+      <div class="hero-bg-container">
+        <!-- Loaded premium cafe interior image -->
+        <img class="hero-bg" src="images/hero_cafe.png" alt="Cafe Vibes Aesthetic Ambient Seating">
+      </div>
+      <div class="hero-overlay"></div>
+
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge reveal">
+            <i class="fa-solid fa-star"></i> Gandhinagar's Favourite Student Hotspot
+          </div>
+          <h1 class="reveal delay-1">Cafe Vibes – <span>Unlimited Dosa,</span> Unlimited Good Times.</h1>
+          <p class="hero-sub reveal delay-2">
+            Indulge in Gandhinagar's legendary Unlimited Dosa feast for only <strong>₹199</strong>. Fresh, crispy,
+            gourmet dosas served steaming hot in the coziest corner of Kudasan.
+          </p>
+          <div class="hero-actions reveal delay-3">
+            <a href="#reserve" class="btn btn-primary">Reserve a Table <i class="fa-solid fa-calendar-days"></i></a>
+            <a href="#menu" class="btn btn-secondary">Explore Menu <i class="fa-solid fa-utensils"></i></a>
+          </div>
+        </div>
+
+        <!-- Info Strip overlayed on bottom of hero content -->
+        <div class="info-strip reveal delay-3" style="margin-top: 1rem;">
+          <div class="info-item">
+            <div class="info-icon"><i class="fa-solid fa-star"></i></div>
+            <div class="info-details">
+              <h4>★ 4.6 / 5 Rating</h4>
+              <p>Top Rated Cafe</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon"><i class="fa-solid fa-users"></i></div>
+            <div class="info-details">
+              <h4>550+ Reviews</h4>
+              <p>On Google Maps</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon"><i class="fa-solid fa-indian-rupee-sign"></i></div>
+            <div class="info-details">
+              <h4>Unlimited @ ₹199</h4>
+              <p>Great Student Value</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="info-details">
+              <h4>Kudasan, G-nagar</h4>
+              <p>Near Orbit Mall</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: WHY CAFE VIBES (BENEFITS) -->
+    <section class="why-us" id="why-vibes">
+      <div class="container">
+        <div class="reveal">
+          <span class="section-tag">Welcome to Cafe Vibes</span>
+          <h2 class="section-title">Why Gandhinagar Loves <span>Our Vibe</span></h2>
+          <p class="section-desc">We blend authentic South Indian flavors with a modern cafe atmosphere, crafting
+            unforgettable dining experiences that are easy on the pocket.</p>
+        </div>
+
+        <div class="why-grid">
+          <div class="why-card reveal delay-1">
+            <div class="badge-icon"><i class="fa-solid fa-circle-notch"></i></div>
+            <h3>Unlimited Dosa Experience</h3>
+            <p>Savor 4 to 5 varieties of gourmet dosas, loaded with cheese, spices, or classic butter, made fresh and
+              filled infinitely.</p>
+          </div>
+
+          <div class="why-card reveal delay-2">
+            <div class="badge-icon"><i class="fa-solid fa-user-group"></i></div>
+            <h3>Perfect for Groups & Students</h3>
+            <p>Spacious, cozy tables designed for long conversations, birthday parties, group studies, and family
+              dinners.</p>
+          </div>
+
+          <div class="why-card reveal delay-3">
+            <div class="badge-icon"><i class="fa-solid fa-camera"></i></div>
+            <h3>Instagrammable Ambience</h3>
+            <p>Featuring warm lighting, rustic dark wood elements, minimal aesthetics, and plating that deserves a spot
+              on your feed.</p>
+          </div>
+
+          <div class="why-card reveal delay-1">
+            <div class="badge-icon"><i class="fa-solid fa-tags"></i></div>
+            <h3>Pocket-Friendly Pricing</h3>
+            <p>Enjoy incredible food that fits student budgets without compromising on ingredient quality or taste
+              standards.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: SIGNATURE MENU SECTION -->
+    <section class="menu-section light-section" id="menu">
+      <div class="container">
+        <div class="menu-layout">
+
+          <!-- Left sticky content panel -->
+          <div class="menu-info reveal">
+            <span class="section-tag">Menu & Feasts</span>
+            <h2 class="section-title" style="color: var(--color-text-dark)">The Legendary <span>Unlimited
+                Festival</span></h2>
+            <div class="unlimited-badge">Unlimited Feast @ ₹199*</div>
+            <p class="section-desc" style="margin-bottom: 2rem;">Our signature feast is the talk of Gandhinagar! Try a
+              rotating selection of crispy dosas served with hot piping sambar and freshly ground chutneys.</p>
+
+            <div class="rules-list">
+              <div class="rule-item">
+                <i class="fa-solid fa-clock"></i>
+                <div class="rule-text">
+                  <h4 style="color: var(--color-text-dark)">Timings</h4>
+                  <p>Lunch: 11:00 AM – 3:00 PM | Dinner: 6:00 PM – 11:00 PM</p>
+                </div>
+              </div>
+              <div class="rule-item">
+                <i class="fa-solid fa-arrows-spin"></i>
+                <div class="rule-text">
+                  <h4 style="color: var(--color-text-dark)">Rotating Varieties</h4>
+                  <p>Get 4-5 different types of specialty dosas served consecutively to your plate.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="disclaimer-badge">
+              <i class="fa-solid fa-circle-info"></i>
+              <p>Offers & pricing subject to change. DM or WhatsApp us to get today's special selection and prices.</p>
+            </div>
+          </div>
+
+          <!-- Right filterable menu grid -->
+          <div class="menu-display reveal delay-1">
+            <div class="menu-tabs">
+              <button class="tab-btn active" data-target="unlimited">Unlimited Dosa Selection</button>
+              <button class="tab-btn" data-target="alacarte">South Indian A La Carte</button>
+              <button class="tab-btn" data-target="chinese">Fast Food & Chinese</button>
+            </div>
+
+            <!-- Tab 1: Unlimited Dosa Selection -->
+            <div class="menu-grid active" id="unlimited">
+              <div class="menu-item-card">
+                <div class="menu-item-top">
+                  <h4 class="menu-item-title"><span class="veg-dot" aria-label="Vegetarian"></span> Gourmet Cheese
+                    Masala Dosa</h4>
+                  <span class="menu-item-price">Feast Special</span>
+                </div>
+                <p class="menu-item-desc">A classic spiced potato mash dosa loaded with fine shredded processed cheese
+                  and cooked to golden perfection.</p>
+              </div>
+
+              <div class="menu-item-card">
+                <div class="menu-item-top">
+                  <h4 class="menu-item-title"><span class="veg-dot" aria-label="Vegetarian"></span> Spicy Mysore Chutney
+                    Dosa</h4>
+                  <span class="menu-item-price">Feast Special</span>
+                </div>
+                <p class="menu-item-desc">Lined with a fiery, aromatic red Mysore garlic-lentil chutney, stuffed with
+                  lightly seasoned potato mash.</p>
+              </div>
+
+              <div class="menu-item-card">
+                <div class="menu-item-top">
+                  <h4 class="menu-item-title"><span class="veg-dot" aria-label="Vegetarian"></span> Schezwan Fusion Dosa
+                  </h4>
+                  <span class="menu-item-price">Feast Special</span>
+                </div>
+                <p class="menu-item-desc">An Indo-Chinese fusion favorite. Golden dosa loaded with spicy schezwan sauce,
+                  crunchy stir-fried veggies.</p>
+              </div>
+
+              <div class="menu-item-card">
+                <div class="menu-item-top">
+                  <h4 class="menu-item-title"><span class="veg-dot" aria-label="Vegetarian"></span> Classic Golden Paper
+                    Roast</h4>
+                  <span class="menu-item-price">Feast Special</span>
+                </div>
+                <p class="menu-item-desc">Ultra-thin, crispy large crepe cooked with pure ghee. Served with traditional
+                  coconut chutney and rich sambar.</p>
+              </div>
+
+              <div class="menu-item-card">
+                <div class="menu-item-top">
+                  <h4 class="menu-item-title"><span class="veg-dot" aria-label="Vegetarian"></span> Special Onion Spring
+                    Dosa</h4>
+                  <span class="menu-item-price">Feast Special</span>
+                </div>
+                <p class="menu-item-desc">Garnished with caramelized red onions, fresh coriander, green chillies, and a
+                  splash of butter.</p>
+              </div>
+
+              <div class="menu-item-card">
+                <div class="menu-item-top">
+                  <h4 class="menu-item-title"><span class="veg-dot" aria-label="Vegetarian"></span> Chocolate Dosa
+                    (Kid's Favorite)</h4>
+                  <span class="menu-item-price">Feast Special</span>
+                </div>
+                <p class="menu-item-desc">Sweet crispy dosa drizzled with melted dark chocolate sauce. The perfect
+                  dessert to end your unlimited meal.</p>
+              </div>
+            </div>
+
+            <!-- Tab 2: South Indian A La Carte -->
+            <div class="menu-grid" id="alacarte">
+              <div class="menu-item-card">
+                <div class="menu-item-top">
+                  <h4 class="menu-item-title"><span class="veg-dot" aria-label="Vegetarian"></span> Ghee Podi Idli (2
+                    Pcs)</h4>
+                  <span class="menu-item-price">₹89</span>
+                </div>
+                <p class="menu-item-desc">Steaming soft idlis tossed in pure home-made cow ghee and gun powder (spicy
+                  lentil mix).</p>
+              </div>
+
+              <div class="menu-item-card">
+                <div class="menu-item-top">
+                  <h4 class="menu-item-title"><span class="veg-dot" aria-label="Vegetarian"></span> Crispy Medu Vada
+                  </h4>
+                  <span class="menu-item-price">₹99</span>
+                </div>
+                <p class="menu-item-desc">Deep-fried lentil donuts with a crunchy exterior and fluffy interior, infused
+                  with black pepper and curry leaves.</p>
+              </div>
+
+              <div class="menu-item-card">
+                <div class="menu-item-top">
+                  <h4 class="menu-item-title"><span class="veg-dot" aria-label="Vegetarian"></span> Rava Onion Masala
+                    Dosa</h4>
+                  <span class="menu-item-price">₹129</span>
+                </div>
+                <p class="menu-item-desc">Lacy semolina batter dosa with onions, ginger, and green chillies, wrapped
+                  around delicious potato masala.</p>
+              </div>
+
+              <div class="menu-item-card">
+                <div class="menu-item-top">
+                  <h4 class="menu-item-title"><span class="veg-dot" aria-label="Vegetarian"></span> Cheese Garlic Dosa
+                  </h4>
+                  <span class="menu-item-price">₹149</span>
+                </div>
+                <p class="menu-item-desc">Crisp dosa brushed with fresh garlic paste and stuffed with a rich blend of
+                  mozzarella and cheddar cheese.</p>
+              </div>
+            </div>
+
+            <!-- Tab 3: Fast Food & Chinese -->
+            <div class="menu-grid" id="chinese">
+              <div class="menu-item-card">
+                <div class="menu-item-top">
+                  <h4 class="menu-item-title"><span class="veg-dot" aria-label="Vegetarian"></span> Veg Hakka Noodles
+                  </h4>
+                  <span class="menu-item-price">₹139</span>
+                </div>
+                <p class="menu-item-desc">Wok-tossed noodles with shredded cabbage, carrots, bell peppers, and scallions
+                  in light soy sauce.</p>
+              </div>
+
+              <div class="menu-item-card">
+                <div class="menu-item-top">
+                  <h4 class="menu-item-title"><span class="veg-dot" aria-label="Vegetarian"></span> Veg Manchurian Dry
+                  </h4>
+                  <span class="menu-item-price">₹149</span>
+                </div>
+                <p class="menu-item-desc">Deep-fried mixed vegetable dumplings tossed in a tangy, spicy, and umami
+                  soy-garlic sauce.</p>
+              </div>
+
+              <div class="menu-item-card">
+                <div class="menu-item-top">
+                  <h4 class="menu-item-title"><span class="veg-dot" aria-label="Vegetarian"></span> Cafe Vibes Double
+                    Club Sandwich</h4>
+                  <span class="menu-item-price">₹159</span>
+                </div>
+                <p class="menu-item-desc">Three slices of toasted bread packed with fresh vegetables, cheese,
+                  garlic-herb spread, and grilled paneer.</p>
+              </div>
+
+              <div class="menu-item-card">
+                <div class="menu-item-top">
+                  <h4 class="menu-item-title"><span class="veg-dot" aria-label="Vegetarian"></span> Peri Peri Cheesy
+                    Fries</h4>
+                  <span class="menu-item-price">₹119</span>
+                </div>
+                <p class="menu-item-desc">Golden crisp potato fries dusted with hot African peri-peri spices and
+                  smothered in a warm cheese sauce.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: GALLERY SECTION -->
+    <section class="gallery" id="gallery">
+      <div class="container">
+        <div class="reveal" style="text-align: center; margin-bottom: 4rem;">
+          <span class="section-tag">Visual Vibes</span>
+          <h2 class="section-title">Step Inside <span>Our Cafe</span></h2>
+          <p class="section-desc" style="margin-left: auto; margin-right: auto;">Explore photos of our cozy interior
+            layout and popular signature dosa dishes.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item reveal delay-1">
+            <img src="images/gourmet_dosa.png" alt="Signature Crispy Dosa Plating with chutneys">
+            <div class="gallery-overlay">
+              <i class="fa-brands fa-instagram"></i>
+              <span>Signature Dosa</span>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal delay-2">
+            <img src="images/cafe_vibes_ambience.png" alt="Cafe Vibes social dining groups">
+            <div class="gallery-overlay">
+              <i class="fa-brands fa-instagram"></i>
+              <span>Cozy Hangout Vibes</span>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal delay-3">
+            <img src="images/dosa_festival.png" alt="Dosa Festival Platter of various options">
+            <div class="gallery-overlay">
+              <i class="fa-brands fa-instagram"></i>
+              <span>Unlimited Dosa Platter</span>
+            </div>
+          </div>
+
+          <div class="gallery-item reveal delay-1">
+            <img src="images/hero_cafe.png" alt="Cafe Vibes warm interior design">
+            <div class="gallery-overlay">
+              <i class="fa-brands fa-instagram"></i>
+              <span>Cafe Interior</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-cta-block reveal">
+          <h3>Love What You See?</h3>
+          <p>Follow our official handle for daily food reels, students discount announcements, and behind-the-scenes
+            vibes.</p>
+          <a href="https://www.instagram.com/cafevibes_kudasan" target="_blank" rel="noopener" class="btn btn-primary">
+            <i class="fa-brands fa-instagram"></i> Follow @cafevibes_kudasan
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: REVIEWS SECTION -->
+    <section class="reviews" id="reviews">
+      <div class="container">
+        <div class="reviews-layout">
+
+          <!-- Left Panel: Large Aggregate Review Display -->
+          <div class="rating-summary-card reveal">
+            <span class="section-tag" style="margin-bottom: 0.5rem;">Google Maps</span>
+            <div class="rating-number">4.6</div>
+            <div class="rating-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <div class="rating-count">Based on 550+ Reviews</div>
+            <div class="rating-source">
+              <i class="fa-brands fa-google"></i> Top Rated Dosa Cafe in Kudasan
+            </div>
+          </div>
+
+          <!-- Right Panel: Slider Carousel -->
+          <div class="reviews-carousel-container reveal delay-1">
+            <div class="reviews-track" id="reviewsTrack">
+
+              <!-- Review Slide 1 -->
+              <div class="review-slide">
+                <div class="review-card">
+                  <div class="review-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <p class="review-content">
+                    "The best unlimited dosa deal in Gandhinagar! For just ₹199, we got 5 types of dosas, all served
+                    steaming hot. The cheese and schezwan dosas are outstanding. Highly recommended for students!"
+                  </p>
+                  <div class="review-author">
+                    <div class="author-avatar">AP</div>
+                    <div class="author-info">
+                      <h4>Aarav Patel</h4>
+                      <p>Local Guide • 58 Reviews</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Review Slide 2 -->
+              <div class="review-slide">
+                <div class="review-card">
+                  <div class="review-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <p class="review-content">
+                    "Cafe Vibes has an amazing atmosphere. The lighting is very warm and cozy, perfect for photos. Their
+                    South Indian food is authentic, and the service is super fast even on busy weekends."
+                  </p>
+                  <div class="review-author">
+                    <div class="author-avatar">PS</div>
+                    <div class="author-info">
+                      <h4>Priya Sharma</h4>
+                      <p>Student, DAIICT • 14 Reviews</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Review Slide 3 -->
+              <div class="review-slide">
+                <div class="review-card">
+                  <div class="review-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                  </div>
+                  <p class="review-content">
+                    "We celebrated my friend's birthday here with a group of 10. The unlimited dosa concept is excellent
+                    value for money. The coconut chutneys are fresh and the staff is extremely friendly."
+                  </p>
+                  <div class="review-author">
+                    <div class="author-avatar">RM</div>
+                    <div class="author-info">
+                      <h4>Rohan Mehta</h4>
+                      <p>Kudasan Resident • 22 Reviews</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Review Slide 4 -->
+              <div class="review-slide">
+                <div class="review-card">
+                  <div class="review-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <p class="review-content">
+                    "If you are near Infocity and want delicious, hygienic South Indian food, this is the place.
+                    Unlimited option is a steal deal. The ambiance feels premium and modern compared to regular
+                    restaurants."
+                  </p>
+                  <div class="review-author">
+                    <div class="author-avatar">KD</div>
+                    <div class="author-info">
+                      <h4>Karan Dave</h4>
+                      <p>IT Professional • 9 Reviews</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Controls (dots & arrow triggers) -->
+            <div class="carousel-controls">
+              <div class="carousel-dots" id="carouselDots">
+                <!-- Javascript will insert dots here dynamically -->
+              </div>
+              <div class="carousel-arrows">
+                <button class="arrow-btn" id="prevBtn" aria-label="Previous Review"><i
+                    class="fa-solid fa-chevron-left"></i></button>
+                <button class="arrow-btn" id="nextBtn" aria-label="Next Review"><i
+                    class="fa-solid fa-chevron-right"></i></button>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: LOCATION & HOURS SECTION -->
+    <section class="location-hours" id="location">
+      <div class="container">
+        <div class="location-layout">
+
+          <div class="location-details-box reveal">
+            <span class="section-tag">Find Us</span>
+            <h2 class="section-title">Where Good Vibes <span>Are Served</span></h2>
+            <p class="section-desc" style="margin-bottom: 2.5rem;">Conveniently located near Gandhinagar's academic hub,
+              making it easy for students and families to gather.</p>
+
+            <div class="contact-card-list">
+              <!-- Address Item -->
+              <div class="contact-card-item">
+                <div class="contact-card-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+                <div class="contact-card-info">
+                  <h4>Address</h4>
+                  <p><a href="https://maps.app.goo.gl/RWY4NNbutx9XGQaa8" target="_blank" rel="noopener">Shop 69, Ground
+                      Floor, Pramukh Anand Orbit Mall, Near Reliance Cross Road, Kudasan, Gandhinagar, Gujarat 382419 <i
+                        class="fa-solid fa-arrow-up-right-from-square"
+                        style="font-size: 0.75rem; margin-left: 4px; color: var(--color-accent-terracotta);"></i></a>
+                  </p>
+                </div>
+              </div>
+
+              <!-- Hours Item -->
+              <div class="contact-card-item">
+                <div class="contact-card-icon"><i class="fa-solid fa-clock"></i></div>
+                <div class="contact-card-info">
+                  <h4>Opening Hours</h4>
+                  <p>Open Daily: 12:30 PM – 11:00 PM</p>
+                  <p style="font-size: 0.85rem; color: var(--color-accent-terracotta);">Special Lunch & Dinner offer
+                    timings apply</p>
+                </div>
+              </div>
+
+              <!-- Contact Item -->
+              <div class="contact-card-item">
+                <div class="contact-card-icon"><i class="fa-solid fa-phone-volume"></i></div>
+                <div class="contact-card-info">
+                  <h4>Contact Info</h4>
+                  <p>Call: <a href="tel:+919081814546">+91 90818 14546</a></p>
+                  <p>WhatsApp Support: <a
+                      href="https://wa.me/919081814546?text=Hi%20Cafe%20Vibes!%20I'd%20like%20to%20inquire%20about%20your%20unlimited%20dosa."
+                      target="_blank" rel="noopener">Chat on WhatsApp</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Styled Google Maps Placeholder/Iframe -->
+          <div class="map-container reveal delay-1">
+            <!-- Embedding map location via direct Google Maps search query embed -->
+            <iframe
+              src="https://maps.google.com/maps?q=Cafe%20Vibes,%20Pramukh%20Anand%20Orbit,%20Kudasan,%20Gandhinagar&t=&z=16&ie=UTF8&iwloc=&output=embed"
+              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              title="Cafe Vibes Map Location Kudasan">
+            </iframe>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: RESERVATION & CONTACT SECTION -->
+    <section class="booking-section" id="reserve">
+      <div class="container">
+        <div class="booking-layout">
+
+          <div class="booking-copy reveal">
+            <span class="section-tag">Reservations</span>
+            <h2 class="section-title">Gather Your <span>Vibe Tribe</span></h2>
+            <p class="section-desc">Plan a student get-together, birthday feast, or family lunch. Send a quick
+              reservation request, or drop us a text on WhatsApp for immediate confirmation.</p>
+
+            <div class="quick-connect-buttons">
+              <a href="https://wa.me/919081814546?text=Hi%20Cafe%20Vibes!%20I%20want%20to%20book%20a%20table%20for%20my%20group."
+                target="_blank" rel="noopener" class="quick-btn">
+                <div class="quick-btn-icon whatsapp"><i class="fa-brands fa-whatsapp"></i></div>
+                <div class="quick-btn-text">
+                  <h4>Message on WhatsApp</h4>
+                  <p>Get instant response in under 5 minutes</p>
+                </div>
+              </a>
+              <a href="tel:+919081814546" class="quick-btn">
+                <div class="quick-btn-icon phone"><i class="fa-solid fa-phone-flip"></i></div>
+                <div class="quick-btn-text">
+                  <h4>Call Front Desk</h4>
+                  <p>Available daily from 12:00 PM – 11:00 PM</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Reservation Form Block -->
+          <div class="booking-form-box reveal delay-1">
+            <h3>Book a Table</h3>
+            <form id="reservationForm">
+
+              <div class="form-group">
+                <label for="fullName" class="form-label">Full Name *</label>
+                <input type="text" id="fullName" class="form-input" placeholder="Enter your name" required>
+              </div>
+
+              <div class="form-group">
+                <label for="phoneNumber" class="form-label">Phone Number *</label>
+                <input type="tel" id="phoneNumber" class="form-input" placeholder="e.g. +91 98765 43210" required>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="reserveDate" class="form-label">Date *</label>
+                  <input type="date" id="reserveDate" class="form-input" required>
+                </div>
+                <div class="form-group">
+                  <label for="reserveTime" class="form-label">Time Slot *</label>
+                  <select id="reserveTime" class="form-input" required>
+                    <option value="" disabled selected>Select time</option>
+                    <option value="12:30 PM">12:30 PM (Lunch)</option>
+                    <option value="1:30 PM">1:30 PM (Lunch)</option>
+                    <option value="2:30 PM">2:30 PM (Lunch)</option>
+                    <option value="6:00 PM">6:00 PM (Dinner)</option>
+                    <option value="7:00 PM">7:00 PM (Dinner)</option>
+                    <option value="8:00 PM">8:00 PM (Dinner)</option>
+                    <option value="9:00 PM">9:00 PM (Dinner)</option>
+                    <option value="10:00 PM">10:00 PM (Dinner)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="guestCount" class="form-label">Number of Guests *</label>
+                <select id="guestCount" class="form-input" required>
+                  <option value="" disabled selected>Select headcount</option>
+                  <option value="2 People">2 People</option>
+                  <option value="3-4 People">3-4 People</option>
+                  <option value="5-6 People">5-6 People</option>
+                  <option value="7-10 People">7-10 People</option>
+                  <option value="10+ People (Party)">10+ People (Group/Party)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="specialRequest" class="form-label">Special Requests (Optional)</label>
+                <textarea id="specialRequest" class="form-input"
+                  placeholder="Mention birthday celebrations, food allergies, or seating preferences..."></textarea>
+              </div>
+
+              <div class="submit-container">
+                <button type="submit" class="btn btn-green" id="whatsappSubmitBtn"><i class="fa-brands fa-whatsapp"
+                    style="font-size: 1.25rem;"></i> Reserve via WhatsApp Chat</button>
+              </div>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- SUCCESS DIALOG POPUP -->
+  <div class="success-overlay" id="successOverlay">
+    <div class="success-card">
+      <div class="success-icon"><i class="fa-solid fa-check"></i></div>
+      <h3>Request Sent!</h3>
+      <p id="successMessage">Thank you, Aarav. We have received your booking request for 4 people on June 15 at 7:00 PM.
+        Our team will contact you shortly to confirm your table.</p>
+      <button class="btn btn-primary" id="closeSuccessBtn">Perfect, see you soon!</button>
+    </div>
+  </div>
+
+  <!-- SECTION 8: FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+
+        <div class="footer-brand">
+          <h3>Cafe Vibes</h3>
+          <p>Gandhinagar's destination for unlimited dosa, warm memories, and cozy café aesthetics.</p>
+          <p style="font-size: 0.8rem; color: var(--color-text-muted-light);">© 2026 Cafe Vibes. All rights reserved.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h4 class="footer-links-title">Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#why-vibes">Why Us</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4 class="footer-links-title">Our Concept</h4>
+          <ul class="footer-links-list">
+            <li><a href="#menu">Unlimited Dosa</a></li>
+            <li><a href="#menu">South Indian Feast</a></li>
+            <li><a href="#menu">Student Hangout</a></li>
+            <li><a href="#reserve">Group Bookings</a></li>
+            <li><a href="#location">Find Timings</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-brand">
+          <h4 class="footer-links-title">Instagram Feed</h4>
+          <div class="footer-insta-preview">
+            <div class="footer-insta-img"><img src="images/gourmet_dosa.png" alt="Insta Post 1"></div>
+            <div class="footer-insta-img"><img src="images/cafe_vibes_ambience.png" alt="Insta Post 2"></div>
+            <div class="footer-insta-img"><img src="images/dosa_festival.png" alt="Insta Post 3"></div>
+          </div>
+          <p style="font-size: 0.75rem; margin-top: 10px;"><a href="https://www.instagram.com/cafevibes_kudasan"
+              target="_blank" rel="noopener" style="color: var(--color-accent-terracotta); font-weight: 600;"><i
+                class="fa-brands fa-instagram"></i> @cafevibes_kudasan</a></p>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>Built with ❤️ for Kudasan & Gandhinagar Foodies. Near Pramukh Anand Orbit Mall, Infocity.</p>
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/cafevibes_kudasan" target="_blank" rel="noopener"
+            class="footer-social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://wa.me/919081814546" target="_blank" rel="noopener" class="footer-social-link"
+            aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://maps.app.goo.gl/RWY4NNbutx9XGQaa8" target="_blank" rel="noopener" class="footer-social-link"
+            aria-label="Google Maps"><i class="fa-solid fa-map-location-dot"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JQUERY CDN FOR ROBUST CAROUSEL & TABS INTERACTIVITY -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="crossorigin"></script>
+
+  <script>
+    /* --------------------------------------------------
+       INTERACTIVE SCRIPTS BLOCK
+       -------------------------------------------------- */
+    $(document).ready(function () {
+
+      // 1. MOBILE DRAWER NAVIGATION
+      const $menuTrigger = $('#menuTrigger');
+      const $mobileNav = $('#mobileNav');
+      const $mobileOverlay = $('#mobileOverlay');
+      const $mobileLinks = $('.mobile-nav-item');
+      const $mobileNavClose = $('#mobileNavClose');
+
+      function toggleMobileMenu() {
+        $menuTrigger.toggleClass('open');
+        $mobileNav.toggleClass('open');
+        $mobileOverlay.toggleClass('visible');
+        $('body').toggleClass('no-scroll');
+      }
+
+      $menuTrigger.on('click', toggleMobileMenu);
+      $mobileOverlay.on('click', toggleMobileMenu);
+      $mobileNavClose.on('click', toggleMobileMenu);
+      $mobileLinks.on('click', function () {
+        if ($mobileNav.hasClass('open')) {
+          toggleMobileMenu();
+        }
+      });
+
+
+      // 2. HEADER SHRINK & BLUR EFFECT ON SCROLL
+      const $header = $('#mainHeader');
+      $(window).on('scroll', function () {
+        if ($(window).scrollTop() > 50) {
+          $header.addClass('scrolled');
+        } else {
+          $header.removeClass('scrolled');
+        }
+      });
+
+
+      // 3. SMOOTH SCROLLING NAV INTERACTION & ACTIVE STATE HIGHLIGHT
+      const sections = $('section, header, footer');
+      const navItems = $('.nav-item');
+
+      $(window).on('scroll', function () {
+        const scrollPos = $(window).scrollTop() + 120; // offset for sticky header
+
+        sections.each(function () {
+          const top = $(this).offset().top;
+          const bottom = top + $(this).outerHeight();
+          const id = $(this).attr('id');
+
+          if (scrollPos >= top && scrollPos <= bottom) {
+            navItems.removeClass('active');
+            $(`.nav-item[href="#${id}"]`).addClass('active');
+          }
+        });
+      });
+
+
+      // 4. SIGNATURE MENU TAB SWITCHING
+      $('.tab-btn').on('click', function () {
+        const targetGridId = $(this).data('target');
+
+        // Remove active class from buttons & grids
+        $('.tab-btn').removeClass('active');
+        $('.menu-grid').removeClass('active');
+
+        // Add active state to clicked elements
+        $(this).addClass('active');
+        $(`#${targetGridId}`).addClass('active');
+      });
+
+
+      // 5. TESTIMONIALS CAROUSEL SLIDER LOGIC
+      const $track = $('#reviewsTrack');
+      const $slides = $('.review-slide');
+      const $dotsContainer = $('#carouselDots');
+      let currentSlideIndex = 0;
+      const totalSlides = $slides.length;
+      let autoSlideTimer;
+
+      // Render indicator dots dynamically based on slide count
+      $slides.each(function (index) {
+        $dotsContainer.append(`<span class="dot ${index === 0 ? 'active' : ''}" data-index="${index}"></span>`);
+      });
+
+      const $dots = $('.dot');
+
+      function updateCarouselPosition() {
+        const offset = -currentSlideIndex * 100;
+        $track.css('transform', `translateX(${offset}%)`);
+
+        // Update active slide class for scaling and opacity animations
+        $slides.removeClass('active-slide');
+        $slides.eq(currentSlideIndex).addClass('active-slide');
+
+        // Update active dot indicators
+        $dots.removeClass('active');
+        $dots.eq(currentSlideIndex).addClass('active');
+      }
+
+      function nextSlide() {
+        currentSlideIndex = (currentSlideIndex + 1) % totalSlides;
+        updateCarouselPosition();
+      }
+
+      function prevSlide() {
+        currentSlideIndex = (currentSlideIndex - 1 + totalSlides) % totalSlides;
+        updateCarouselPosition();
+      }
+
+      // Action triggers
+      $('#nextBtn').on('click', function () {
+        nextSlide();
+        resetAutoSlide();
+      });
+
+      $('#prevBtn').on('click', function () {
+        prevSlide();
+        resetAutoSlide();
+      });
+
+      $dots.on('click', function () {
+        currentSlideIndex = $(this).data('index');
+        updateCarouselPosition();
+        resetAutoSlide();
+      });
+
+      // Auto-slide loops
+      function startAutoSlide() {
+        autoSlideTimer = setInterval(nextSlide, 6000);
+      }
+
+      function resetAutoSlide() {
+        clearInterval(autoSlideTimer);
+        startAutoSlide();
+      }
+
+      // Initialize slide state
+      updateCarouselPosition();
+      startAutoSlide();
+
+
+      // 6. SCROLL REVEAL ANIMATIONS (INTERSECTION OBSERVER)
+      const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.12
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            $(entry.target).addClass('active');
+            observer.unobserve(entry.target); // Stop observing after animated
+          }
+        });
+      }, observerOptions);
+
+      $('.reveal').each(function () {
+        observer.observe(this);
+      });
+
+
+      // 7. RESERVATION FORM HANDLING & WHATSAPP BUILDER
+      const $form = $('#reservationForm');
+      const $overlay = $('#successOverlay');
+      const $successMessage = $('#successMessage');
+
+      // Date constraints - restrict booking to today or future dates
+      const today = new Date().toISOString().split('T')[0];
+      $('#reserveDate').attr('min', today);
+
+      // Submit Form (Merges validation, WhatsApp redirection, and visual success confirmation)
+      $form.on('submit', function (e) {
+        e.preventDefault();
+
+        const name = $('#fullName').val();
+        const phone = $('#phoneNumber').val();
+        const date = $('#reserveDate').val();
+        const time = $('#reserveTime').val();
+        const guests = $('#guestCount').val();
+        const request = $('#specialRequest').val() || "None";
+
+        // Display summary text inside success modal
+        $successMessage.html(`Thank you, <strong>${name}</strong>! We have initiated your WhatsApp booking request for <strong>${guests}</strong> on <strong>${date}</strong> at <strong>${time}</strong>.<br><br>If the WhatsApp chat window did not open automatically, you can also reach us directly at <strong>+91 90818 14546</strong>.`);
+
+        // Show success modal overlay
+        $overlay.addClass('visible');
+
+        // Formulate WhatsApp message text
+        let waText = `Hi Cafe Vibes! I'd like to book a table:\n\n`;
+        waText += `• Name: ${name}\n`;
+        waText += `• Phone: ${phone}\n`;
+        waText += `• Date: ${date}\n`;
+        waText += `• Time: ${time}\n`;
+        waText += `• Guests: ${guests}\n`;
+        if (request && request !== "None") {
+          waText += `• Special Request: ${request}\n`;
+        }
+
+        const encodedText = encodeURIComponent(waText);
+
+        // Open WhatsApp chat in a new tab after a brief delay
+        setTimeout(function () {
+          window.open(`https://wa.me/919081814546?text=${encodedText}`, '_blank');
+        }, 300);
+
+        // Reset the form input fields
+        $form[0].reset();
+      });
+
+      // Close modal popup trigger
+      $('#closeSuccessBtn').on('click', function () {
+        $overlay.removeClass('visible');
+      });
+
+    });
+  </script>
+</body>
+
+</html>
